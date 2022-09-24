@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "SF-400";
+    src: url('../fonts/SFProDisplay-Regular.woff') format("woff");
+}
+@font-face {
+    font-family: "SF-600";
+    src: url('../fonts/SFProDisplay-Semibold.woff') format("woff");
+}
+
+%sf-600{
+    font-family: "SF-600"; //SF Display Pro Semibold
+    font-weight: 600;
+}
+
+%sf-400{
+    font-family: "SF-400"; //SF Display Pro Regular
+    font-weight: 600;
+}

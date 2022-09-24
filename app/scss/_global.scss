@@ -1,0 +1,75 @@
+.page-section{
+    background-image: url('../images/jpg/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    overflow-x: hidden;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: linear-gradient(107.54deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
+        opacity: 0.15;
+    }
+    &__wrapper{
+        z-index: 1;
+        position: relative;
+        min-height: 100vh;
+        padding: 74px 0 50px;
+    }
+}
+
+body{
+    color: #ffF;
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    font-family: Ubuntu;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container{
+    max-width: 1270px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.scroll__btn{
+    padding: 13px 0 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.title{
+    @extend %sf-400;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 53px;
+    padding-top: 105px;
+    padding-left: 30px;
+}
+
+.btn{
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+    background-color: transparent;
+    color: #fff;
+    transition: .3s;
+    
+    &:hover{
+        background-color: #fff;
+        color: #000;
+    }
+}

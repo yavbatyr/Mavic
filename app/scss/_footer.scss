@@ -1,0 +1,13 @@
+.footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    &__copy{
+        text-align: right;
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 130%;
+        opacity: 0.64;
+    }
+}

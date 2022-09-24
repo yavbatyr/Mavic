@@ -1,0 +1,144 @@
+.benefits {
+
+    // .benefits__title
+
+    &__title {
+        margin-bottom: 53px;
+    }
+
+    // .benefits__items
+
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1270px;
+        padding-left: 60px;
+        
+    }
+
+    // .benefits__num
+
+    &__num {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 41px;
+        margin-top: 96px;
+        margin-right: 5px;
+    }
+
+
+    // .benefits__item
+
+    &__item {
+        display: flex;
+        max-width: 607px;
+        // min-height: 147px;
+        margin-bottom: 100px;
+        margin-right: 20px;
+        position: relative;
+        &:first-child{
+            &::before{
+                content: '';
+                position: absolute;
+                background-image: url(../images/svg/linez.svg);
+                width: 237px;
+                height: 45.5px;
+                top: 31px;
+                right: -70px;
+                transform: scaleX(1.3) rotateY(1deg) skewY(-2deg);
+            }
+        }  
+        &:nth-child(2){
+            &::after{
+                content: '';
+                position: absolute;
+                background-image: url(../images/svg/line.svg);
+                width: 469px;
+                height: 45.5px;
+                top: 116px;
+                right: 527px;
+                -webkit-transform: scaleX(1.2) rotateY(20deg) skewY(-13deg);
+                transform: scaleX(1) rotate(-1deg) skewY(-8deg);
+            }
+        }
+        &:nth-child(3){
+                &:before{
+                    content: '';
+                    position: absolute;
+                    background-image: url(../images/svg/linez.svg);
+                    width: 237px;
+                    height: 45.5px;
+                    top: 31px;
+                    right: -70px;
+                    transform: scaleX(1.3) rotateY(1deg) skewY(-2deg);
+                }
+            }
+        }
+        
+        &-3{
+            margin-left: 30px;
+        }
+        &__item:nth-child(even){
+            transform: translateY(25px);
+        }
+
+
+    
+
+
+
+
+
+
+
+
+    // .benefits__img
+
+    &__img {
+        width: 195px;
+        height: 130px;
+        overflow: hidden;
+        margin-right: 32px;
+    }
+
+    &__img::before{
+        content: '';
+        position: absolute;
+        border: 2px solid #FFFFFF;
+        top: -12px;
+        left: 38px;
+        width: 195px;
+        height: 130px;
+        z-index: -1;
+    }
+
+    // .benefits__info
+
+    &__info {
+        width: 300px;
+       
+    }
+
+    // .benefits__info-title
+
+    &__info-title {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+
+    // .benefits__info-text
+
+    &__info-text {
+        font-family: 'Ubuntu';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 19px;
+    }
+}

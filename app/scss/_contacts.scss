@@ -1,0 +1,157 @@
+.contacts {
+
+    // .contacts__inner
+
+    &__title{
+        margin-bottom: 56px;
+    }
+
+    &__inner {
+        padding-left: 60px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    // .contacts__info
+
+    &__info {
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info-inner{
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .contacts__info-title
+
+    &__info-title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 13px;
+    }
+
+    // .contacts__info-phone
+
+    &__info-phone {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 130%;
+        color: #fff;
+        margin-bottom: 5px;
+    }
+
+    // .contacts__info-email
+
+    &__info-email {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 130%;
+        color: #fff;
+    }
+
+    &__info-phone:hover,
+    &__info-email:hover{
+        text-decoration: underline;
+    }
+
+    // .contacts__form
+
+    &__form {
+
+    }
+
+    // .contacts__form-title
+
+    &__form-title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 24px;
+        margin-bottom: 13px;
+    }
+
+    // .contacts__form-text
+
+    &__form-text {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 130%;
+        margin-bottom: 12px;
+    }
+
+    // .contacts__form-line
+
+    &__form-line {
+        margin-bottom: 10px;
+    }
+
+    // .contacts__form-input
+
+    &__form-input,
+    &__form-textarea{
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0.95;
+        color: #fff;
+        padding: 15px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 130%;
+        &::placeholder{
+            color: rgba($color: #fff, $alpha: .4);
+        }
+    }
+
+    &__form-input{
+        width: 280px;
+        height: 46px;
+        margin-right: 10px;
+    }
+
+    &__form-textarea{
+        width: 570px;
+        height: 144px;
+        margin-bottom: 20px;
+        resize: none;
+    }
+
+    // .contacts__form-textarea
+
+    
+
+    // .contacts__form-btn
+
+    &__form-btn {
+        width: 120px;
+        height: 34px;
+    }
+
+    // .contacts__social-list
+
+    &__social-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.top {
+
+    // .top__social-item
+
+    &__social-item {
+        padding-bottom: 25px;
+    }
+
+    // .top__social-link
+
+    &__social-link {
+    }
+
+    // .top__social-img
+
+    &__social-img {
+    }
+}

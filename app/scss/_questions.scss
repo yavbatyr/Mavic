@@ -1,0 +1,76 @@
+.questions {
+    
+    // .questions__items
+
+    &__title{
+        margin-bottom: 38px;
+    }
+
+    &__items {
+        padding-left: 30px;
+    }
+
+    // .questions__item
+
+    &__item {
+        max-width: 757px;
+        min-height: 72px;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0.8;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+    &__item-img::before{
+        content: '';
+        position: absolute;
+        bottom: -94px;
+        right: -391px;
+        width: 319px;
+        height: 125px;
+        background-image: url('../images/png/dron-half.png');
+    }
+
+    // .questions__item-title
+
+    &__item-title {
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 28px;
+        padding: 20px 20px 24px 39px;
+        position: relative;
+        cursor: pointer;
+        &::after{
+            content: url('../images/svg/qarrow.svg');
+            background-color: #fff;
+            width: 72px;
+            height: 67px;
+            position: absolute;
+            top: 0;
+            right: -72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    // .questions__item-text
+
+    &__item-text {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 150%;
+        padding: 20px 10px 75px 50px;
+        display: none;
+    }
+
+    &__item.questions__item--active{
+        .questions__item-title::after{
+            transform: rotate(180deg);
+        }
+        .questions__item-text{
+            display: block;
+        }
+    }
+}
+
